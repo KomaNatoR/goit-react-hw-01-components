@@ -1,16 +1,21 @@
+import profileData from "../data/user.json";
+import { Profile } from "./profile/Profile";
+import { Container } from './App.styled';
+
 export const App = () => {
+  // console.log(props.theme);
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+    
+      <Profile
+        avatar={profileData.avatar}
+        name={profileData.username}
+        tag={profileData.tag}
+        location={profileData.location}
+        followers={profileData.stats.followers}
+        views={profileData.stats.views}
+        likes={profileData.stats.likes}
+      />
+    </Container>
   );
 };
