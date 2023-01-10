@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { Container, DataList } from "./Profile.styled";
+import { Container, OutlineDataList,UserDataCont } from "./Profile.styled";
 
 // import profileData from "./user.json";
 
@@ -9,14 +9,14 @@ import { Container, DataList } from "./Profile.styled";
 export function Profile({avatar,name,tag,location,followers,views,likes}) {
     return (
         <Container>
-            <div>
+            <UserDataCont>
                 <img src={avatar} alt="User avatar" />
                 <p>{name}</p>
                 <p>@{tag}</p>
                 <p>{location}</p>
-            </div>
+            </UserDataCont>
 
-            <DataList>
+            <OutlineDataList>
                 <li>
                     <span>Followers</span>
                     <span>{followers}</span>
@@ -29,7 +29,7 @@ export function Profile({avatar,name,tag,location,followers,views,likes}) {
                     <span>Likes</span>
                     <span>{likes}</span>
                 </li>
-            </DataList>
+            </OutlineDataList>
         </Container>
     );
 };
