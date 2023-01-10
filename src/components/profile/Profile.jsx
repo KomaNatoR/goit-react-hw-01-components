@@ -1,10 +1,7 @@
 import PropTypes from 'prop-types';
 
-import { Container, OutlineDataList,UserDataCont } from "./Profile.styled";
+import { Container, OutlineDataList, UserDataCont } from "./Profile.styled";
 
-// import profileData from "./user.json";
-
-// console.log(profileData);
 
 export function Profile({avatar,name,tag,location,followers,views,likes}) {
     return (

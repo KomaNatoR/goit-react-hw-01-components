@@ -10,7 +10,7 @@ export const Container = styled.div`
     
     border: 0px solid transparent;
     border-radius: 5px;
-    box-shadow: 2px 2px 8px #363636;
+    box-shadow: 1px 1px 4px #363636;
     overflow: hidden;
 `;
 
