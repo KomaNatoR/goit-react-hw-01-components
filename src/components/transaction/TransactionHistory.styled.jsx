@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const Table = styled.table`
     min-width: 500px;
     margin-top: 10px;
+    margin-left: 10px;
     border: 0px solid transparent;
     border-radius: 5px;
     box-shadow: 1px 1px 4px #363636;
