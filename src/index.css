@@ -20,4 +20,5 @@ code {
 border-left: 1px solid gray;
 border-right:1px solid gray;
 flex-grow: 1;
+/* text-align: ; */
 }
