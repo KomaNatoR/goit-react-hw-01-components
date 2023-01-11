@@ -3,6 +3,8 @@ import profileData from "../data/user.json";
 import { Profile } from "./profile/Profile";
 import statsData from "../data/data.json";
 import { Statistics } from "./statistics/Statistics";
+import friendData from "../data/friends.json";
+import { FriendList } from "./friendList/FriendList";
 
 export const App = () => {
   // console.log(props.theme);
@@ -22,6 +24,10 @@ export const App = () => {
       <Statistics
         title = "Upload Stats"
         stats={statsData}
+      />
+
+      <FriendList
+        friends = {friendData}
       />
     </Container>
   );

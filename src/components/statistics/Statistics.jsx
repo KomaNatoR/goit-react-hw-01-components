@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { Section, List } from "./Statistics.styled";
 
- function statsMap({id, label, percentage}) {
+function statsMap({id, label, percentage}) {
     return (
         <li key={id}>
             <span>{label}</span>
@@ -14,7 +14,7 @@ import { Section, List } from "./Statistics.styled";
 export function Statistics({title, stats}) {
     return (
         <Section>
-            
+
             {title && <h2>{title}</h2>}
 
             <List>
