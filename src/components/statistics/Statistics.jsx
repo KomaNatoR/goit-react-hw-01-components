@@ -14,8 +14,8 @@ import { Section, List } from "./Statistics.styled";
 export function Statistics({title, stats}) {
     return (
         <Section>
-
-            <h2>{title}</h2>
+            
+            {title && <h2>{title}</h2>}
 
             <List>
                 {stats.map(statsMap)}
