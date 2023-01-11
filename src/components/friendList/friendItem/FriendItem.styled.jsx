@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 export const Item = styled.li`
     display: flex;
     padding: 5px;
-    min-width: 150px;
+    min-width: 100px;
 
     border: 0px solid #000000;
     border-radius: 5px;
@@ -19,7 +19,7 @@ export const Item = styled.li`
         background-color: ${props=>props.isOnline?"green":"red"};
     }
     img {
-        margin-right: 10px;
+        margin-right: 22px;
     }
     p {
         font-size: 18px;
