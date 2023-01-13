@@ -1,9 +1,12 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
-    width: 400px;
+    display: flex;
+    flex-direction: column;
 
-    margin-left: 8px;
+    width: 400px;
+    height: 200px;
+    margin:0 0 0 8px;
 
     text-align: center;
 
@@ -11,14 +14,20 @@ export const Section = styled.section`
     border-radius: 5px;
     box-shadow: 1px 1px 4px #363636;
     overflow: hidden;
+
+    h2 {
+        text-transform: uppercase;
+    }
 `;
 
 export const List = styled.ul`
     list-style: none;
     display: flex;
 
+    margin: auto 0 0 0;
     padding: 0;
-    margin-top: auto;
+
+    background-color: lightgray;
 
     li {
         width: calc(250px / 3);
@@ -40,6 +49,10 @@ export const List = styled.ul`
             border-right: none;
         }
         
+        span:first-of-type {
+            font-size: 22px;
+            font-weight: 500;
+        }
         span:last-of-type {
             margin-top: 5px;
         }

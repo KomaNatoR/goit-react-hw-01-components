@@ -16,9 +16,12 @@ code {
 
 
 .test {
+  height: 200px;
   list-style: none;
 border-left: 1px solid gray;
 border-right:1px solid gray;
 flex-grow: 1;
 /* text-align: ; */
+text-transform: uppercase;
+background-color: lightgray;
 }
