@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-import { Section, List } from "./statistics.styled";
-import StatsList from "./List/List";
+import { Section, List } from "./statistic.styled";
+import StatsList from "./List/Listik";
 
 
 function Statistics({ title, stats }) {
