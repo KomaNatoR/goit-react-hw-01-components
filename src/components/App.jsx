@@ -2,7 +2,7 @@ import { Container } from './App.styled';
 import profileData from "../data/user.json";
 import Profile from "./Profile/Profile";
 import statsData from "../data/data.json";
-import { Statistics } from "./Statistics/Statistics";
+import Statistics from "./Statistics/Statistics";
 import friendData from "../data/friends.json";
 import { FriendList } from "./friendList/FriendList";
 import transactions from "../data/transactions.json";
@@ -11,7 +11,7 @@ import { Transaction } from "./transaction/TransactionHistory";
 export const App = () => {
   return (
     <Container>
-    
+{/*     
       <Profile
         avatar={profileData.avatar}
         name={profileData.username}
@@ -20,7 +20,8 @@ export const App = () => {
         followers={profileData.stats.followers}
         views={profileData.stats.views}
         likes={profileData.stats.likes}
-      />
+      /> */}
+      <Profile {...profileData} /> 
 
       <Statistics
         title = "Upload Stats"
@@ -37,4 +38,3 @@ export const App = () => {
     </Container>
   );
 };
-// Transaction
