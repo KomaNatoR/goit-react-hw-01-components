@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { Section, List } from "./Statistics.styled";
+import { Section, List } from "./statistics.styled";
 import StatsList from "./List/List";
 
 
