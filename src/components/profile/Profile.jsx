@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { Container, OutlineDataList, UserDataCont } from "./Profile.styled";
+import { Container, OutlineDataList, UserDataCont } from "./profile.styled";
 
 
 function Profile({ avatar, username, tag, location, stats:{followers, views, likes} }) {
