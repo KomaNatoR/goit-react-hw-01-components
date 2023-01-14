@@ -4,19 +4,20 @@ import { Section, List } from "./Statistics.styled";
 import StatsList from "./List/List";
 
 
-export function Statistics({title, stats}) {
+export function Statistics({ title, stats }) {
+    const statsMap = stats.map(stat => <StatsList
+        key={stat.id}
+        label={stat.label}
+        percentage={stat.percentage}
+    />);
+
     return (
         <Section>
 
             {title && <h2>{title}</h2>}
 
             <List>
-                {/* {stats.map(statsMap)} */}
-                {stats.map(stat => <StatsList
-                    key={stat.id}
-                    label={stat.label}
-                    percentage={stat.percentage}
-                />)}
+                {statsMap}
             </List>
         </Section>
     );
@@ -24,4 +25,8 @@ export function Statistics({title, stats}) {
 Statistics.propTypes = {
     text: PropTypes.string,
     stats: PropTypes.arrayOf(PropTypes.shape),
+};
+Statistics.defaultProps = {
+    title: "no data",
+    stats: [],
 };
