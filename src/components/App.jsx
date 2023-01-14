@@ -1,6 +1,6 @@
 import { Container } from './App.styled';
 import profileData from "../data/user.json";
-import Profile from "./Profile/Profile";
+import Profile from "./Profile/Proffile";
 import statsData from "../data/data.json";
 import Statistics from "./Statistics/Statistics";
 import friendData from "../data/friends.json";
