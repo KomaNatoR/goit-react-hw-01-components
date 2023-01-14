@@ -30,7 +30,14 @@ function Profile({avatar,name,tag,location,followers,views,likes}) {
         </Container>
     );
 };
-
+Profile.defaultProps = {
+    name: "no data",
+    tag: "no data",
+    location: "no data",
+    followers: "-",
+    views: "-",
+    likes: "-",
+};
 Profile.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
