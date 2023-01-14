@@ -4,7 +4,6 @@ import { Container, OutlineDataList, UserDataCont } from "./profile.styled";
 
 
 function Profile({ avatar, username, tag, location, stats:{followers, views, likes} }) {
-    // console.log(Profile);
     return (
         <Container>
             <UserDataCont>
@@ -41,12 +40,12 @@ Profile.defaultProps = {
 };
 Profile.propTypes = {
     avatar: PropTypes.string.isRequired,
-    username: PropTypes.string,
-    tag: PropTypes.string,
-    location: PropTypes.string,
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes:PropTypes.number,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes:PropTypes.number.isRequired,
 };
 
 export default Profile;
