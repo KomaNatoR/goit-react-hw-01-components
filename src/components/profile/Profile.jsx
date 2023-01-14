@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Container, OutlineDataList, UserDataCont } from "./profile.styled";
 
 
-function Profile({ avatar, username, tag, location, stats:{followers, views, likes} }) {
+function Profile({ avatar, username, tag, location, stats }) {
     return (
         <Container>
             <UserDataCont>
@@ -16,15 +16,15 @@ function Profile({ avatar, username, tag, location, stats:{followers, views, lik
             <OutlineDataList>
                 <li>
                     <span>Followers</span>
-                    <span>{followers}</span>
+                    <span>{stats.followers}</span>
                 </li>
                 <li>
                     <span>Views</span>
-                    <span>{views}</span>
+                    <span>{stats.views}</span>
                 </li>
                 <li>
                     <span>Likes</span>
-                    <span>{likes}</span>
+                    <span>{stats.likes}</span>
                 </li>
             </OutlineDataList>
         </Container>
