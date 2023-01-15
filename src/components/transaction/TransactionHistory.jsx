@@ -1,24 +1,8 @@
 import PropTypes from 'prop-types';
 
+import TransRender from "./TransList/TransRender"
 import { Table } from "./TransactionHistory.styled";
 
-function TransRender({id, type, amount, currency}) {
-    return (
-        <tbody key={id}>
-            <tr>
-                <td>{type}</td>
-                <td>{amount}</td>
-                <td>{currency}</td>
-            </tr>
-        </tbody>
-    );
-};
-TransRender.propTypes = {
-    id: PropTypes.string,
-    type: PropTypes.string.isRequired,
-    amount: PropTypes.string.isRequired,
-    currency: PropTypes.string.isRequired,
-}
 
 export function Transaction({items}) {
     return (
@@ -34,6 +18,7 @@ export function Transaction({items}) {
 
             {items.map(item => <TransRender
                 key={item.id}
+                id={item.id}
                 type={item.type}
                 amount={item.amount}
                 currency={item.currency}
@@ -42,5 +27,10 @@ export function Transaction({items}) {
     );
 };
 Transaction.propTypes = {
-    items: PropTypes.arrayOf(PropTypes.shape),
+    items: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+        amount: PropTypes.string.isRequired,
+        currency: PropTypes.string.isRequired,
+    })),
 };
