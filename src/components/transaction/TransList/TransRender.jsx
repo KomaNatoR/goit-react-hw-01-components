@@ -12,7 +12,6 @@ function TransRender({ type, amount, currency }) {
     );
 };
 TransRender.propTypes = {
-    id: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
